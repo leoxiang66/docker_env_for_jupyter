@@ -33,7 +33,7 @@ RUN mkdir -p ~/.jupyter && \
     echo "c.NotebookApp.token = ''" >> ~/.jupyter/jupyter_notebook_config.py
 
 # 暴露 Jupyter Notebook 端口
-EXPOSE 8888
+EXPOSE 3000
 
 # 启动 Jupyter Notebook
-CMD ["jupyter", "notebook", "--allow-root", "--no-browser", "--ip=0.0.0.0", "--port=8888"]
+CMD ["reflex", "run"]
