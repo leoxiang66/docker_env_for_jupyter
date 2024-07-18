@@ -36,5 +36,7 @@ RUN mkdir -p ~/.jupyter && \
 # 暴露 Jupyter Notebook 端口
 EXPOSE 3000
 
+EXPOSE 8000
+
 # 启动 Jupyter Notebook
 CMD ["reflex", "run"]
