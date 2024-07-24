@@ -13,6 +13,7 @@ RUN apt-get update && \
     build-essential \
     curl \
     unzip \
+    xdg-utils \
     && apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
